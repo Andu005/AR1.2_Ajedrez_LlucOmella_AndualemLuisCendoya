@@ -10,6 +10,10 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ---
 
+![Muestra de la inicialización del tablero](/AR1.2_Ajedrez_LlucOmella_AndualemLuisCendoya/tablero.png)
+
+---
+
 
 ## 🔛 Movimiento
 
