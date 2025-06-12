@@ -10,10 +10,10 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ---
 
+## Muestra de la inicialización del tablero
 ![Muestra de la inicialización del tablero](/tablero.png)
 
 ---
-
 
 ## 🔛 Movimiento
 
@@ -21,7 +21,6 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 - Si el movimiento no es válido, se le indica al usuario y permitirá un nuevo movimiento.
 
 ---
-
 
 ## 🏁 Juego
 
