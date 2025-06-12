@@ -29,17 +29,21 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 ## 📁 Repositorio
 
 El repositorio contiene:
-- ajedrez/
-  - Archivos de encabezado/
-    - const.h
-    - logica.h
-  - Archivos de origen/
-    - const.cpp
-    - juego.cpp
-    - main.cpp
-    - movimiento.cpp
-    - tablero.cpp
-  - Otros archivos de configuración
+```text
+ajedrez/
+├── 📁 Archivos de encabezado/
+│   ├── 📄 const.h
+│   └── 📄 logica.h
+│
+├── 📁 Archivos de origen/
+│   ├── 📄 const.cpp
+│   ├── 📄 juego.cpp
+│   ├── 📄 main.cpp
+│   ├── 📄 movimiento.cpp
+│   └── 📄 tablero.cpp
+│
+└── 📁 Otros archivos de configuración
+```
 
 ## 📚 Creditos
 
