@@ -19,19 +19,19 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 - Generación de un tablero.
 - Colocación de fichas en posición inicial
-
+[▲ Volver al índice](#índice)
 ---
 
 ## Muestra de la inicialización del tablero <a name="id2"></a>
 ![Muestra de la inicialización del tablero](/tablero.png)
-
+[▲ Volver al índice](#índice)
 ---
 
 ## 🔛 Movimiento <a name="id3"></a>
 
 - Los jugadores alternan su turno. Tal y como en el juego original sacan simpre las blancas.
 - Si el movimiento no es válido, se le indica al usuario y permitirá un nuevo movimiento.
-
+[▲ Volver al índice](#índice)
 ---
 
 ## Fichas <a name="id4"></a>
@@ -45,14 +45,14 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 | Reina     | 1                      | Horizontal/Vertical/Diagonal (ilimitado) | Igual que movimiento    |
 | Rey       | 1                      | 1 casilla en cualquier dirección | Igual que movimiento          |
 
-
+[▲ Volver al índice](#índice)
 ---
 
 ## 🏁 Juego <a name="id5"></a>
 
 - El juego pedirá al usuario que ingrese la posición movimiento: ej. a2 a3.
 - La ficha se mueve sí, puede avanzar y/o matar a otra ficha.
-
+[▲ Volver al índice](#índice)
 ---
 
 ## 📁 Repositorio <a name="id6"></a>
@@ -73,6 +73,8 @@ ajedrez/
 │
 └── 📁 Otros archivos de configuración
 ```
+[▲ Volver al índice](#índice)
+---
 
 ## 📚 Creditos <a name="id7"></a>
 
@@ -80,10 +82,11 @@ Practica realitzada por:
 
 - Lluc Omella
 - Andualem
-
+[▲ Volver al índice](#índice)
 ---
 
 Licencia <a name="id8"></a>
 --------
 
 Licencia GNU-GPL <[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)\>
+[▲ Volver al índice](#índice)
