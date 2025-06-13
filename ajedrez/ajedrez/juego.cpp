@@ -23,12 +23,14 @@ void jugar() {
         int yFin = entrada2[0] - '1';
         int xFin = 8 - (entrada2[1] - '0');
 
+        // Verificación de las cordenadas
         if (xInicio < 0 || xInicio > 7 || yInicio < 0 || yInicio > 7 ||
             xFin < 0 || xFin > 7 || yFin < 0 || yFin > 7) {
             cout << "Posición inválida!\n";
             continue;
         }
-
+            
+        //captura del rey (jaque)
         if (movimientoValido(xInicio, yInicio, xFin, yFin)) {
             if (tablero[xFin][yFin] == 'K' || tablero[xFin][yFin] == 'k') {
                 tablero[xFin][yFin] = tablero[xInicio][yInicio];
@@ -50,7 +52,7 @@ void jugar() {
                 cout << "¡Peón promovido a reina!" << endl;
             }
 
-            turnoBlancas = !turnoBlancas;
+            turnoBlancas = !turnoBlancas; //cambio de turno
         }
         else {
             cout << "Movimiento no válido!\n";
