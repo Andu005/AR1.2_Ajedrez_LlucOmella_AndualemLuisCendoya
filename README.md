@@ -3,26 +3,38 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ---
 
-## ⬜⬛ Tablero
+## Índice
+1. Tablero (#id1)
+2. Muestra (#id2)
+3. Movimiento (#id3)
+4. Fichas (#id4)
+5. Juego (#id5)
+6. Repositorio (#id6)
+7. Creditos (#id7)
+8. Licencia (#id8)
+
+---
+
+## ⬜⬛ Tablero <a name="id1"></a>
 
 - Generación de un tablero.
 - Colocación de fichas en posición inicial
 
 ---
 
-## Muestra de la inicialización del tablero
+## Muestra de la inicialización del tablero <a name="id2"></a>
 ![Muestra de la inicialización del tablero](/tablero.png)
 
 ---
 
-## 🔛 Movimiento
+## 🔛 Movimiento <a name="id3"></a>
 
-- Los jugadores alternan su turno.
+- Los jugadores alternan su turno. Tal y como en el juego original sacan simpre las blancas.
 - Si el movimiento no es válido, se le indica al usuario y permitirá un nuevo movimiento.
 
 ---
 
-## Fichas
+## Fichas <a name="id4"></a>
 
 | Nombre    | Cantidad (por jugador) | Movimiento                  | Elimina                              |
 |-----------|------------------------|-----------------------------|--------------------------------------|
@@ -36,14 +48,14 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ---
 
-## 🏁 Juego
+## 🏁 Juego <a name="id5"></a>
 
 - El juego pedirá al usuario que ingrese la posición movimiento: ej. a2 a3.
 - La ficha se mueve sí, puede avanzar y/o matar a otra ficha.
 
 ---
 
-## 📁 Repositorio
+## 📁 Repositorio <a name="id6"></a>
 
 El repositorio contiene:
 ```text
@@ -62,7 +74,7 @@ ajedrez/
 └── 📁 Otros archivos de configuración
 ```
 
-## 📚 Creditos
+## 📚 Creditos <a name="id7"></a>
 
 Practica realitzada por:
 
@@ -71,7 +83,7 @@ Practica realitzada por:
 
 ---
 
-Licencia
+Licencia <a name="id8"></a>
 --------
 
 Licencia GNU-GPL <[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)\>
