@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int main() { //función principal donde se ejecuta el juego 
     jugar();
     return 0;
 }
