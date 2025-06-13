@@ -57,7 +57,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ## 🏁 Juego <a name="id5"></a>
 
-- El juego pedirá al usuario que ingrese la posición movimiento: ej. a2 a3.
+- El juego pedirá al usuario que ingrese la posición y el movimiento que va a realizar: ej. a2 a3.
 - La ficha se mueve sí, puede avanzar y/o matar a otra ficha.
 
 [▲ Volver al índice](#índice)
