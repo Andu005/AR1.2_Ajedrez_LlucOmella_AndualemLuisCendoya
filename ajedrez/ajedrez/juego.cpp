@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cctype>
+#include <cctype> //Se usa para funciones de manejo de caracteres, como verificar si un carácter es una letra o un número
 #include "const.h"
 #include "logica.h"
 using namespace std;
