@@ -4,7 +4,7 @@
 #include "logica.h"
 using namespace std;
 
-
+//generación de tablero
 void inicializarTablero() {
     char piezasNegras[] = { 't', 'h', 'b', 'k', 'q', 'b', 'h', 't' };
     char piezasBlancas[] = { 'T', 'H', 'B', 'Q', 'K', 'B', 'H', 'T' };
@@ -22,7 +22,7 @@ void inicializarTablero() {
     }
 }
 
-
+//impresión del tablero
 void mostrarTablero() {
     cout << "\n  1 2 3 4 5 6 7 8" << endl;
     for (int i = 0; i < 8; ++i) {
