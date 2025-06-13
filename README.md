@@ -25,7 +25,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 ---
 
 ## Muestra de la inicialización del tablero <a name="id2"></a>
-![Muestra de la inicialización del tablero](/tablero.png)
+![Muestra de la inicialización del tablero generado](/tablero.png) ![Muestra de un tablero real](/tableroreal.png)
 
 [▲ Volver al índice](#índice)
 
