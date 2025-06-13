@@ -54,22 +54,26 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
 
     // Movimiento de la Reina
     if (pieza == 'Q' || pieza == 'q') {
-        if (abs(xFin - xInicio) == abs(yFin - yInicio)) {
-            int dx = (xFin - xInicio) > 0 ? 1 : -1;
-            int dy = (yFin - yInicio) > 0 ? 1 : -1;
-            int x = xInicio + dx, y = yInicio + dy;
-            while (x != xFin && y != yFin) {
-                if (tablero[x][y] != '*') return false;
-                x += dx;
-                y += dy;
-            }
-            return true;
+    // Movimiento diagonal (como alfil)
+    if (abs(xFin - xInicio) == abs(yFin - yInicio)) {
+        int dx = (xFin - xInicio) > 0 ? 1 : -1;
+        int dy = (yFin - yInicio) > 0 ? 1 : -1;
+        int x = xInicio + dx, y = yInicio + dy;
+        while (x != xFin && y != yFin) {
+            if (tablero[x][y] != '*') return false;
+            x += dx;
+            y += dy;
         }
-        if (xInicio == xFin || yInicio == yFin) {
-            return movimientoValido(xInicio, yInicio, xFin, yFin);
-        }
-        return false;
+        return true;
     }
+    // Movimiento recto (como torre)
+    if (xInicio == xFin || yInicio == yFin) {
+        return caminoLibreTorre(xInicio, yInicio, xFin, yFin);
+    }
+
+    return false;
+}
+
 
     // Movimiento del Alfil
     if (pieza == 'B' || pieza == 'b') {
@@ -104,4 +108,24 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
     }
 
     return false;
+}
+
+bool caminoLibreTorre(int xInicio, int yInicio, int xFin, int yFin) {
+    if (xInicio == xFin) {
+        int inicio = yInicio < yFin ? yInicio + 1 : yFin + 1;
+        int fin = yInicio < yFin ? yFin : yInicio;
+        for (int y = inicio; y < fin; ++y) {
+            if (tablero[xInicio][y] != '*') return false;
+        }
+    } else if (yInicio == yFin) {
+        int inicio = xInicio < xFin ? xInicio + 1 : xFin + 1;
+        int fin = xInicio < xFin ? xFin : xInicio;
+        for (int x = inicio; x < fin; ++x) {
+            if (tablero[x][yInicio] != '*') return false;
+        }
+    } else {
+        return false;  // no es movimiento recto
+    }
+
+    return true;
 }
