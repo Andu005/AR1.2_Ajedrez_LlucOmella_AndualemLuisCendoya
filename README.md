@@ -24,6 +24,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ## Muestra de la inicialización del tablero <a name="id2"></a>
 ![Muestra de la inicialización del tablero](/tablero.png)
+
 [▲ Volver al índice](#índice)
 ---
 
@@ -31,6 +32,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 - Los jugadores alternan su turno. Tal y como en el juego original sacan simpre las blancas.
 - Si el movimiento no es válido, se le indica al usuario y permitirá un nuevo movimiento.
+
 [▲ Volver al índice](#índice)
 ---
 
@@ -52,6 +54,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 - El juego pedirá al usuario que ingrese la posición movimiento: ej. a2 a3.
 - La ficha se mueve sí, puede avanzar y/o matar a otra ficha.
+
 [▲ Volver al índice](#índice)
 ---
 
@@ -73,6 +76,7 @@ ajedrez/
 │
 └── 📁 Otros archivos de configuración
 ```
+
 [▲ Volver al índice](#índice)
 ---
 
@@ -82,6 +86,7 @@ Practica realitzada por:
 
 - Lluc Omella
 - Andualem
+
 [▲ Volver al índice](#índice)
 ---
 
@@ -89,4 +94,5 @@ Licencia <a name="id8"></a>
 --------
 
 Licencia GNU-GPL <[https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)\>
+
 [▲ Volver al índice](#índice)
