@@ -22,6 +22,20 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 ---
 
+## Fichas
+
+| Nombre    | Cantidad (por jugador) | Movimiento                  | Elimina                              |
+|-----------|------------------------|-----------------------------|--------------------------------------|
+| Peón      | 8                      | 1 casilla adelante (2 en primer movimiento) | Diagonal adelante (1 casilla) |
+| Torre     | 2                      | Horizontal/Vertical (ilimitado) | Igual que movimiento               |
+| Caballo   | 2                      | En "L" (2+1 casillas)       | Igual que movimiento               |
+| Alfil     | 2                      | Diagonal (ilimitado)        | Igual que movimiento               |
+| Reina     | 1                      | Horizontal/Vertical/Diagonal (ilimitado) | Igual que movimiento    |
+| Rey       | 1                      | 1 casilla en cualquier dirección | Igual que movimiento          |
+
+
+---
+
 ## 🏁 Juego
 
 - El juego pedirá al usuario que ingrese la posición movimiento: ej. a2 a3.
