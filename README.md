@@ -19,13 +19,16 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 
 - Generación de un tablero.
 - Colocación de fichas en posición inicial
+
 [▲ Volver al índice](#índice)
+
 ---
 
 ## Muestra de la inicialización del tablero <a name="id2"></a>
 ![Muestra de la inicialización del tablero](/tablero.png)
 
 [▲ Volver al índice](#índice)
+
 ---
 
 ## 🔛 Movimiento <a name="id3"></a>
@@ -34,6 +37,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 - Si el movimiento no es válido, se le indica al usuario y permitirá un nuevo movimiento.
 
 [▲ Volver al índice](#índice)
+
 ---
 
 ## Fichas <a name="id4"></a>
@@ -48,6 +52,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 | Rey       | 1                      | 1 casilla en cualquier dirección | Igual que movimiento          |
 
 [▲ Volver al índice](#índice)
+
 ---
 
 ## 🏁 Juego <a name="id5"></a>
@@ -56,6 +61,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 - La ficha se mueve sí, puede avanzar y/o matar a otra ficha.
 
 [▲ Volver al índice](#índice)
+
 ---
 
 ## 📁 Repositorio <a name="id6"></a>
@@ -78,6 +84,7 @@ ajedrez/
 ```
 
 [▲ Volver al índice](#índice)
+
 ---
 
 ## 📚 Creditos <a name="id7"></a>
@@ -88,6 +95,7 @@ Practica realitzada por:
 - Andualem
 
 [▲ Volver al índice](#índice)
+
 ---
 
 Licencia <a name="id8"></a>
