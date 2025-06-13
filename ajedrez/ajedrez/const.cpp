@@ -1,4 +1,3 @@
 #include "const.h"
-
-char tablero[8][8];
+char tablero[TABLERO][TABLERO];
 bool turnoBlancas = true;

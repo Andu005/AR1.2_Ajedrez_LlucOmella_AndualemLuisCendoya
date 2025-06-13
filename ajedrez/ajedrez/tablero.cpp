@@ -6,8 +6,8 @@ using namespace std;
 
 
 void inicializarTablero() {
-    char piezasNegras[] = { 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r' };
-    char piezasBlancas[] = { 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R' };
+    char piezasNegras[] = { 't', 'h', 'b', 'k', 'q', 'b', 'h', 't' };
+    char piezasBlancas[] = { 'T', 'H', 'B', 'Q', 'K', 'B', 'H', 'T' };
     for (int i = 0; i < 8; ++i) {
         tablero[0][i] = piezasNegras[i];
         tablero[7][i] = piezasBlancas[i];
@@ -24,7 +24,7 @@ void inicializarTablero() {
 
 
 void mostrarTablero() {
-    cout << "\n  a b c d e f g h" << endl;
+    cout << "\n  1 2 3 4 5 6 7 8" << endl;
     for (int i = 0; i < 8; ++i) {
         cout << 8 - i << " ";
         for (int j = 0; j < 8; ++j) {
@@ -32,5 +32,5 @@ void mostrarTablero() {
         }
         cout << 8 - i << endl;
     }
-    cout << "  a b c d e f g h" << endl;
+    cout << "  1 2 3 4 5 6 7 8" << endl;
 }

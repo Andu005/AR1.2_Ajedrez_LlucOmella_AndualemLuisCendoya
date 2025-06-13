@@ -1,4 +1,4 @@
 #pragma once
-
-extern char tablero[8][8];
+#define TABLERO 8
+extern char tablero[TABLERO][TABLERO];
 extern bool turnoBlancas;

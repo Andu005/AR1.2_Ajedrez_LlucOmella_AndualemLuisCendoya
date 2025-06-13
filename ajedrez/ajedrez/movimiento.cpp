@@ -32,7 +32,7 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
         if ((xFin - xInicio == 1) && abs(yInicio - yFin) == 1 && isupper(tablero[xFin][yFin])) return true;
     }
 
-    if (pieza == 'R' || pieza == 'r') {
+    if (pieza == 'T' || pieza == 't') {
         if (xInicio != xFin && yInicio != yFin) return false;
 
         if (xInicio == xFin) { 
@@ -50,6 +50,57 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
             }
         }
         return true;
+    }
+
+    // Movimiento de la Reina
+    if (pieza == 'Q' || pieza == 'q') {
+        if (abs(xFin - xInicio) == abs(yFin - yInicio)) {
+            int dx = (xFin - xInicio) > 0 ? 1 : -1;
+            int dy = (yFin - yInicio) > 0 ? 1 : -1;
+            int x = xInicio + dx, y = yInicio + dy;
+            while (x != xFin && y != yFin) {
+                if (tablero[x][y] != '*') return false;
+                x += dx;
+                y += dy;
+            }
+            return true;
+        }
+        if (xInicio == xFin || yInicio == yFin) {
+            return movimientoValido(xInicio, yInicio, xFin, yFin);
+        }
+        return false;
+    }
+
+    // Movimiento del Alfil
+    if (pieza == 'B' || pieza == 'b') {
+        if (abs(xFin - xInicio) == abs(yFin - yInicio)) {
+            int dx = (xFin - xInicio) > 0 ? 1 : -1;
+            int dy = (yFin - yInicio) > 0 ? 1 : -1;
+            int x = xInicio + dx, y = yInicio + dy;
+            while (x != xFin && y != yFin) {
+                if (tablero[x][y] != '*') return false;
+                x += dx;
+                y += dy;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    // Movimiento del Caballo
+    if (pieza == 'H' || pieza == 'h') {
+        int dx = abs(xFin - xInicio);
+        int dy = abs(yFin - yInicio);
+        if ((dx == 2 && dy == 1) || (dx == 1 && dy == 2)) return true;
+        return false;
+    }
+
+    // Movimiento del Rey
+    if (pieza == 'K' || pieza == 'k') {
+        int dx = abs(xFin - xInicio);
+        int dy = abs(yFin - yInicio);
+        if (dx <= 1 && dy <= 1) return true;
+        return false;
     }
 
     return false;
