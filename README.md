@@ -4,7 +4,7 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 ---
 
 ## Índice
-1. [Tablero] (#1-tablero)
+1. [Tablero] (#id1)
 2. Muestra (#id2)
 3. Movimiento (#id3)
 4. Fichas (#id4)
