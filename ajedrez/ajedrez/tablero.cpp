@@ -30,7 +30,7 @@ void mostrarTablero() {
         for (int j = 0; j < 8; ++j) {
             cout << tablero[i][j] << " ";
         }
-        cout << 8 - i << endl;
+        cout << endl;
     }
-    cout << "  1 2 3 4 5 6 7 8" << endl;
+    cout << endl;
 }
