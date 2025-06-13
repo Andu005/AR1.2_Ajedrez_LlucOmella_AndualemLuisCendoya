@@ -5,9 +5,10 @@
 using namespace std;
 
 void jugar() {
-    inicializarTablero();
-    while (true) {
-        mostrarTablero();
+    inicializarTablero();  // Configura el tablero con las piezas en la posici贸n inicial
+    
+    while (true) {  // Bucle principal del juego que se ejecuta hasta que hay un ganador
+        mostrarTablero(); // impresion del tablero
         string entrada1, entrada2;
         cout << (turnoBlancas ? "Blancas" : "Negras") << ", ingrese movimiento (ej. 12 13): ";
         cin >> entrada1 >> entrada2;
@@ -16,7 +17,7 @@ void jugar() {
             cout << "Formato incorrecto! Usar ej. 12 13\n";
             continue;
         }
-
+        // Conversi贸n de coordenadas (por ejemplo, "12": fila 1, columna 2)
         int yInicio = entrada1[0] - '1';
         int xInicio = 8 - (entrada1[1] - '0');
         int yFin = entrada2[0] - '1';
@@ -24,7 +25,7 @@ void jugar() {
 
         if (xInicio < 0 || xInicio > 7 || yInicio < 0 || yInicio > 7 ||
             xFin < 0 || xFin > 7 || yFin < 0 || yFin > 7) {
-            cout << "Posici髇 inv醠ida!\n";
+            cout << "Posici贸n inv谩lida!\n";
             continue;
         }
 
@@ -33,7 +34,7 @@ void jugar() {
                 tablero[xFin][yFin] = tablero[xInicio][yInicio];
                 tablero[xInicio][yInicio] = '*';
                 mostrarTablero();
-                cout << (turnoBlancas ? "as blancas ganan!" : "as negras ganan!") << endl;
+                cout << (turnoBlancas ? "隆Las blancas ganan!" : "隆Las negras ganan!") << endl;
                 break;
             }
 
@@ -42,17 +43,17 @@ void jugar() {
 
             if (tablero[xFin][yFin] == 'P' && xFin == 0) {
                 tablero[xFin][yFin] = 'Q';
-                cout << "e髇 promovido a reina!" << endl;
+                cout << "隆Pe贸n promovido a reina!" << endl;
             }
             if (tablero[xFin][yFin] == 'p' && xFin == 7) {
                 tablero[xFin][yFin] = 'q';
-                cout << "e髇 promovido a reina!" << endl;
+                cout << "隆Pe贸n promovido a reina!" << endl;
             }
 
             turnoBlancas = !turnoBlancas;
         }
         else {
-            cout << "Movimiento no v醠ido!\n";
+            cout << "Movimiento no v谩lido!\n";
         }
     }
 }
