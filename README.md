@@ -10,8 +10,8 @@ Simulación del juego del ajedrez en C++, jugable mediante terminal.
 4. [Fichas](#id4)
 5. [Juego](#id5)
 6. [Repositorio](#id6)
-7. Creditos
-8. Licencia
+7. [Creditos](#id7)
+8. [Licencia](#id8)
 
 ---
 
