@@ -10,7 +10,7 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
     char piezaDestino = tablero[xFin][yFin];
 
     if (pieza == '*') return false;
-    if (turnoBlancas && islower(pieza)) return false;
+    if (turnoBlancas && islower(pieza)) return false; //Islower o Isupper comprueban si es menor o mayor a...
     if (!turnoBlancas && isupper(pieza)) return false;
 
 
@@ -30,7 +30,7 @@ bool movimientoValido(int xInicio, int yInicio, int xFin, int yFin) {
         if (yInicio == yFin && tablero[xFin][yFin] == '*' && (xFin - xInicio == 1)) return true;
         if (xInicio == 1 && yInicio == yFin && xFin == 3 && tablero[2][yFin] == '*' && tablero[3][yFin] == '*') return true;
         if ((xFin - xInicio == 1) && abs(yInicio - yFin) == 1 && isupper(tablero[xFin][yFin])) return true;
-    }
+    } //abs devuelve el valor absoluto de un parametro 
 
     if (pieza == 'T' || pieza == 't') {
         if (xInicio != xFin && yInicio != yFin) return false;
